@@ -75,8 +75,6 @@
                           <th>No</th>
                           <th>Paket</th>
                           <th>Harga Paket</th>
-                          <th>Dibuat Pada</th>
-                          <th>Diperbarui Pada</th>
                           <th>Action</th>
                         </tr>
                       </thead>
@@ -97,12 +95,6 @@
                             </td>
                             <td>
                               <?='Rp ' . number_format($row['biaya'], 0, ",", ".");?>
-                            </td>
-                            <td>
-                              <?=date('d-m-Y H:i:s', strtotime($row['created_at']));?>
-                            </td>
-                            <td>
-                              <?=date('d-m-Y H:i:s', strtotime($row['updated_at']));?>
                             </td>
                             <td>
                               <a href="paket_edit.php?id_paket=<?=$row['id_paket'];?>" class="btn btn-success"><i class="fa fa-fw fa-edit"></i> Edit</a>&nbsp;
