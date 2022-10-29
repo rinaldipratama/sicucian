@@ -16,7 +16,8 @@
         $('#pelanggan').DataTable({
             "processing": true,
             "language": {
-                "processing": "Sedang memuat....."
+                "processing": "Sedang memuat.....",
+                "searchPlaceholder": "Kata Kunci..."
             },
             "serverSide": true,
             "ajax": "pelanggan_datatables.php",
