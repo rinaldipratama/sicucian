@@ -82,7 +82,8 @@
         $('#user').DataTable({
             "processing": true,
             "language": {
-                "processing": "Sedang memuat....."
+                "processing": "Sedang memuat.....",
+                "searchPlaceholder": "Kata Kunci..."
             },
             "serverSide": true,
             "ajax": "user_datatables.php",
